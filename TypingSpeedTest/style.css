@@ -1,0 +1,122 @@
+/* Color Scheme 
+Maximum Blue Green : #59C3C3
+Plump Purple: #52489C
+Platinum (White/Grey) : #EBEBEB 
+Ash Grey : #CAD2C5
+Dark Sea Green : #84A98C
+----------------- */
+
+/* Global Styles
+---------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #ebebeb;
+    color: black;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Title Styles 
+----------------- */
+
+.title {
+    background-color: #52489c;
+    padding: 1em 2em;
+}
+
+.title h1, .btn {
+    font-family: 'Lobster', cursive;
+    color: #EBEBEB;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Intro Styles 
+----------------- */
+article {
+    text-align: center;
+    display: block;
+}
+
+.intro {
+    text-align: center;
+    padding: 1em 2em;
+    background: #84a98c;
+}
+
+article p {
+    margin: auto;
+    max-width: 500px;
+}
+
+/* Test Text Styles
+------------------- */
+
+#origin-text {
+    margin: 1em auto;
+    padding: 1em;
+    background-color:#CAD2C5;
+    border-radius: 4px;
+    max-width: 500px;
+    
+}
+
+.test-wrapper {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid #84A98C;
+    border-radius: 4px;;
+}
+
+.test-wrapper textarea {
+    flex: 1;
+}
+
+.meta {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.btn {
+    display: block;
+    color: #ebebeb;
+    background-color: #52489c;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    margin:  0 auto;
+    padding: 1em 2em;
+    font-size: larger;
+}
+
+.btn:hover {
+    background: rgba(82, 72, 156, 80%);
+}
+
+.test-area {
+    display: block;
+}
+
+#test-area {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+}
+
+#clock {
+    display: block;
+    font-size: 2em;
+    margin: 0 auto;
+}

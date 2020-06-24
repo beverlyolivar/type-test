@@ -31,16 +31,14 @@ function runTimer() {
 // Match the text entered with the provided text on the page:
 function spellCheck() {
     let textEntered = testArea.value;
-
     let originTextMatch = originText.substring(0,textEntered.length);
 
     if (textEntered == originText) {
-        console.info("Interval stopped: ", interval);
         clearInterval(interval);
-        testWrapper.style.borderColor = "#429890";
+        testWrapper.style.borderColor = "#84A98C";
     } else {
         if (textEntered == originTextMatch) {
-            testWrapper.style.borderColor = "#65CCf3" + originTextMatch + "more string";
+            testWrapper.style.borderColor = "#65CCf3";
         } else {
             testWrapper.style.borderColor = "#E95D0F";
         }
@@ -50,8 +48,8 @@ function spellCheck() {
 
 // Start the timer:
 function start() {
-    let textEnterdLength = testArea.value.length;
-    if (textEnterdLength === 0 && !timerRunning) {
+    let textEnteredLength = testArea.value.length;
+    if (textEnteredLength === 0 && !timerRunning) {
         timerRunning = true;
         interval = setInterval(runTimer, 10);
         console.info(interval);
